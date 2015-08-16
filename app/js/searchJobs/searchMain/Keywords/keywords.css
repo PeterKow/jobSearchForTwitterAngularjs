@@ -1,0 +1,52 @@
+li.tag.tag-engineering {
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    padding: .6rem;
+    color: #fff;
+    background-color: #e9c836;
+    font-size: 1.4rem;
+    cursor: pointer;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+li.tag.tag-product {
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    padding: .6rem;
+    color: #fff;
+    background-color: grey;
+    font-size: 1.4rem;
+    cursor: pointer;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+li.tag.tag-location{
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    padding: .6rem;
+    color: #fff;
+    background-color: yellowgreen;
+    font-size: 1.4rem;
+    cursor: pointer;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+li.tag.tag-skills {
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    padding: .6rem;
+    color: #fff;
+    background-color: lightcoral;
+    font-size: 1.4rem;
+    cursor: pointer;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+.mainSearchKeywords{
+    max-width: 700px;
+    /*max-height: 620px;*/
+}

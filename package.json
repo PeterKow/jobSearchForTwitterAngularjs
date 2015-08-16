@@ -1,0 +1,17 @@
+{
+  "name": "lineman-angular-template",
+  "title": "An HTML/JS/CSS app using Angular.JS",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Peter Kowalczyk",
+    "company": "Aurity"
+  },
+  "devDependencies": {
+    "lineman": "^0.34.0",
+    "request": "^2.40.0"
+  },
+  "scripts": {
+    "start": "lineman run"
+  }
+}

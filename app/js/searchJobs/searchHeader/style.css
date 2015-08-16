@@ -1,0 +1,13 @@
+#searchHeader{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.goldLine{
+    background: #DAA520;
+    height: 3px;
+}
+
+ul#userDropdown {
+    left: inherit;
+    right: 0px;
+}

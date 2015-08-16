@@ -1,0 +1,29 @@
+<div class="absoluteCenter mainSearchInputs">
+
+
+        <logo data-class="logo" data-size="big"></logo>
+
+        <form  data-class=="logo" data-ng-submit="main.onSearchButton(main)">
+            <div class="input">
+                <select id="firstSearch" class="form-control" data-ng-model="main.selectedLanguage"
+                        data-ng-options="value.language for value in main.languageOptions" >
+                </select>
+            </div>
+
+            <div class="input">
+                <!-- <span class="input-group-addon"></span> -->
+                <input id="second" data-ng-model="main.searchInputs.second" type="text" class="form-control"
+                       placeholder="Location eg. London" >
+            </div>
+
+            <div class="input">
+                <!-- <span class="input-group-addon"></span> -->
+                <input id="third" data-ng-model="main.searchInputs.third" type="text" class="form-control"
+                       placeholder="Your main skills eg. AngularJS, Bootsratp" >
+                <span class="input-group-btn">
+                <button data-ng-hide="true" class="btn btn-default" type="submit">Go!</button>
+                </span>
+            </div>
+        </form>
+
+</div>

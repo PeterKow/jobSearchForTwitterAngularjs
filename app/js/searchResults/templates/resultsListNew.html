@@ -1,0 +1,27 @@
+<section id="results">
+
+    <!--<div class="list-group">-->
+        <div class="panel panel-default ng-scope"
+             ng-repeat="result in results.model.data.statuses | filter: results.filterFirst | orderBy: 'priority' :true">
+
+            <div class="panel-body media">
+                <span class="badge pull-right ng-binding">{{result.priority}}</span>
+                <div class="pull-left ng-scope">
+                    <img class="thumbnail" data-ng-src="{{result.user.profile_image_url_https}}">
+                 </div>
+                <div class="">
+                    <div class="">
+                        <a data-ng-href="{{result.entities.urls[0].url}}">{{result.user.name}} {{result.created_at | limitTo:'16'}}</a>
+                        <p class="meta">
+                            {{result.text}}
+                            <a ng-href="{{result.entities.urls[0].url}}">{{result.entities.urls[0].url}}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+
+

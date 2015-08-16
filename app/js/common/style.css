@@ -1,0 +1,12 @@
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 10px 0;
+}
+.logoTop{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 44px;
+}

@@ -1,0 +1,18 @@
+<div class="resultsPanel" > <!--class for margin ok????????-->
+    <div>
+        Completed in: {{results.model.data.search_metadata.completed_in}} ms Count: {{results.model.data.statuses.length}}
+        <button class="btn btn-default fa fa-cog small" ng-click="results.isCollapsed = !results.isCollapsed"></button>
+    </div>
+
+    <div collapse="results.isCollapsed">
+        <div class="well well-lg">
+            <h4>Switch results templates:</h4>
+            <div class="btn-group">
+                <label class="btn btn-primary" data-ng-model="results.templateName" btn-radio="'resultsList'">resultsList</label>
+                <label class="btn btn-primary" data-ng-model="results.templateName" btn-radio="'resultsListNew'">resultsListNew</label>
+            </div>
+            <button class="btn btn-default" ng-click="results.highlight()">Highlight keywords</button>
+        </div>
+    </div>
+
+</div>

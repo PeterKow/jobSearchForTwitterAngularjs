@@ -1,0 +1,16 @@
+.absoluteCenter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 5px;
+}
+.mainSearchInputs{
+    max-width: 700px;
+    max-height: 300px;
+}
+.input {
+    padding: 5px 0 5px;
+}

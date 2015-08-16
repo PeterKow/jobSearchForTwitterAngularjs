@@ -1,0 +1,45 @@
+<div class="row" data-ng-controller="headerCtrl as search">
+    <div class="col-md-2">
+            <a href="/#/" ><logo data-class="logoTop" data-size="small"></logo></a>
+    </div>
+    <form data-ng-submit="search.onSearchButton(search)">
+        <div class="col-md-3">
+            <div class="input">
+                <select id="first" class="form-control" data-ng-model="search.selectedLanguage"
+                        data-ng-options="value.language for value in search.languageOptions" >
+                </select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="input">
+                <input id="second" data-ng-model="search.searchInputs.second" type="text" class="form-control"
+                       placeholder="Location eg. London" >
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="input">
+                <input id="third" data-ng-model="search.searchInputs.third" type="text" class="form-control"
+                       placeholder="Your main skills eg. AngularJS, Bootsratp">
+            </div>
+        </div>
+        <div class="col-md-1" data-ng-hide="true">
+            <button class="btn btn-default" type="submit">GO!</button>
+        </div>
+    </form>
+    <div class="col-md-1">
+        <span class="dropdown" dropdown on-toggle="toggled(open)">
+            <a href class="dropdown-toggle" dropdown-toggle>
+                <img style="height: 40px; border-radius: 10px;" src="/img/me.png">
+             </a>
+            <ul id="userDropdown" class="dropdown-menu">
+                <li><a href>Log in</a></li>
+                <li><a href>Sign in</a></li>
+                  <!--<li ng-repeat="choice in items">-->
+                      <!---->
+                  <!--</li>-->
+            </ul>
+        </span>
+    </div>
+
+</div>
+<div class="goldLine"></div>

@@ -1,0 +1,17 @@
+<div class="resultsContainer">
+    <div data-ng-show="results.model.data" class="results" data-ng-controller="resultsCtr as results">
+
+        <!-- Additional filters-->
+        <div data-results-filters data-filter-first="results.filterFirst"></div>
+
+        <!-- Results details-->
+        <results-panel data-template-name="results.templateName"></results-panel>
+
+        <!--Results-->
+        <div class="slide-animate-container">
+            <div class="slide-animate" data-ng-include="'/searchResults/templates/'+results.templateName+'.html'"></div>
+        </div>
+        <!--<results-list></results-list>-->
+
+    </div>
+</div>

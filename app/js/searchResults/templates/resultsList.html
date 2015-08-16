@@ -1,0 +1,22 @@
+<section id="results">
+    <div class="list-group" >
+        <div class="list-group-item" ng-repeat="result in results.model.data.statuses | filter: results.filterFirst | orderBy: 'priority' :true">
+            <div class="resultsContent">
+                <span class="badge pull-right list">{{result.priority}}</span>
+                <img class="avatar" ng-src="{{result.user.profile_image_url_https}}"/>
+                <a href="#">
+                    <strong class="list-group-item-heading">{{result.user.name}}</strong>
+                </a>
+                <span>{{result.created_at | limitTo:'16'}}</span>
+                <p class="list-group-item-text">
+                    {{result.text}}
+                    <a ng-href="{{result.entities.urls[0].url}}">{{result.entities.urls[0].url}}</a>
+                </p>
+                <div data-toolbar-footer></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
